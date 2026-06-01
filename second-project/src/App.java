@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class App {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Quantos anos você tem? ");
+        int age = scanner.nextInt();
+        System.out.println("Você é emancipado? (true/false) ");
+        boolean isEmancipated = scanner.nextBoolean();
+        boolean canDrive = age >= 18 || isEmancipated && age >= 16;
+        System.out.printf("Você pode dirigir? (%s) \n", canDrive);
+        scanner.close();
+    }
+
+}
