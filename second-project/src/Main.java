@@ -1,3 +1,4 @@
+import java.time.OffsetDateTime;
 import java.util.Scanner;
 
 public class Main {
@@ -5,8 +6,9 @@ public class Main {
     public static void main(String[] args){
         // Exercicio 1
         String nome = "Apolo";
+        var baseYear = OffsetDateTime.now().getYear();
         int anoNascimento = 2017;
-        System.out.printf("Olá, %s! Você tem %d anos. \n", nome, 2026 - anoNascimento);
+        System.out.printf("Olá, %s! Você tem %d anos. \n", nome, baseYear - anoNascimento);
 
         System.out.println("==============================================================");
 
