@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class Main {
 
-    public static void main(String[] args){
+    public static void main(String[] args, String string){
         // Exercicio 1
         String nome = "Apolo";
         var baseYear = OffsetDateTime.now().getYear();
@@ -40,7 +40,7 @@ public class Main {
         String nome2 = scanner.next();
         System.out.print("Digite a idade da segunda pessoa: \n");
         int idade2 = scanner.nextInt();
-        System.out.printf("Olá, a diferença de idade entre %s e %s é de %d anos. \n", nome1, nome2, Math.abs(idade1 - idade2));
+        System.out.printf(string, nome1, nome2, Math.abs(idade1 - idade2));
 
         System.out.println("==============================================================");
 
