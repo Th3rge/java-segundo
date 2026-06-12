@@ -18,7 +18,7 @@ public class Teste {
                 System.out.println("==============================================================");
             }
         }
-
+        //System.out.println(numero.getClass().getSimpleName());
         scanner.close();
     }
 
